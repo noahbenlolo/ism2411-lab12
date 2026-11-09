@@ -92,3 +92,15 @@ with open(SALES_FILE , "r") as f:
         summary[product] = summary.get(product, 0) + total
 for product in sorted (summary):
     print(f"{product}: ${summary[product]:.2f}")
+
+print("---Exercise #8---")
+timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+with open(LOG_FILE, "a") as f:
+    f.write(f"{timestamp} - total revenue: ${total_revenue:.2f}\n")
+
+entries = 0 
+with open(LOG_FILE, "r") as f:
+    for line in f:
+        entries += 1
+print(line.strip())
+print(f"log entries so far: {enteries}")
