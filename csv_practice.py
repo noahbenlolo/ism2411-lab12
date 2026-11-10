@@ -1,3 +1,9 @@
+# Reflection 
+# 1. This compares to excel because so many more rows can be read and written to a csv file. 
+# it is also easier to manipulate the data in a csv file than in excel.
+# 2. A business might use append mode log file by seeing how often users are accessing their database to view information. 
+# So you are able to optomize how much info is shown to the user and how often they are accessing it.
+
 import csv
 from datetime import datetime
 
